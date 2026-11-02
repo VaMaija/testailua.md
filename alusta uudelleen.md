@@ -15,8 +15,14 @@ Asensin virtuaalikoneeksi Debian live 13.7.0-amd64.iso -levykkeeltä Trixien. Se
 - python3 tarvitaan ansiblen seuraksi  
 
 seuraavaksi SSH-käyttöönotto Tero Karvisen ohjeiden mukaan [täältä](https://terokarvinen.com/ssh-public-key-login-without-password/):  
-    maija@hallitsija3:~$ sudo systemctl enable --now ssh
-    maija@hallitsija:~$ ssh localhost
+    `maija@hallitsija:~$ sudo systemctl enable --now ssh`  
+    `maija@hallitsija:~$ ssh localhost`
+    "yes" to fingerprint
+    `maija@hallitsija3:~$ w`  
+    
+    
+
+    
 
 
 
