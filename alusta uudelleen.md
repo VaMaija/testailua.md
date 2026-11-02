@@ -1,6 +1,8 @@
 
 Alusta uudella Ubuntulla: 
 
+
+## Alusta uusi kone
 Asensin virtuaalikoneeksi Debian live 13.7.0-amd64.iso -levykkeeltä Trixien. Se löytyy [täältä](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/).   
 
     maija@hallitsija:~$ sudo apt-get update  
@@ -18,6 +20,7 @@ Asensin virtuaalikoneeksi Debian live 13.7.0-amd64.iso -levykkeeltä Trixien. Se
 - apache2 on verkkopalvelintyökalu   
 - python3 tarvitaan ansiblen seuraksi  
 
+## SSH käyttöönotto 
 seuraavaksi SSH-käyttöönotto Tero Karvisen ohjeiden mukaan [täältä](https://terokarvinen.com/ssh-public-key-login-without-password/):  
     `maija@hallitsija:~$ sudo systemctl enable --now ssh`  
     `maija@hallitsija:~$ ssh localhost`
@@ -31,6 +34,7 @@ seuraavaksi SSH-käyttöönotto Tero Karvisen ohjeiden mukaan [täältä](https:
     maija@hallitsija3:~$ sudo cat /home/maija/.ssh/id_ed25519  //yksityinen avain kotihakemistosta
     maija@hallitsija3:~$ sudo cat /home/maija/.ssh/id_ed25519.pub  //Julkinen avain kotihakemistosta  <img width="344" height="307" alt="Näyttökuva 2026-11-03 005236" src="https://github.com/user-attachments/assets/d7bacf43-62b9-4138-bd2c-f8a260c7b9c4" />
 
+## Ohutta yläpilveä
 
 [UpCloudista](https://upcloud.com/) vuokrasin pilvipalvelua 3€/kk-hinnalla leikkimiseen ja testailuun. Tein paketin Aatu Niemen mainioilla [ohjeilla](https://github.com/AONCODES/linux-course/blob/main/h4.md)   
 
@@ -46,6 +50,13 @@ seuraavaksi SSH-käyttöönotto Tero Karvisen ohjeiden mukaan [täältä](https:
 
 <img width="428" height="258" alt="Näyttökuva 2026-11-02 180855" src="https://github.com/user-attachments/assets/a97b8b8a-4a3b-42e4-8b04-b01406975333" />    
 
+<img width="344" height="307" alt="Näyttökuva 2026-11-03 005236" src="https://github.com/user-attachments/assets/5b365871-eb57-4c50-bf49-b8405e77206f" />  
+
+
+
+
+
+## SSH avaimella automaattisesti sisään Tero Karvisen [ohjein](https://terokarvinen.com/ssh-public-key-login-without-password/#automatic-login-with-ssh-public-key)
 
 
 
