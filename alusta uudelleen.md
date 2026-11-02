@@ -61,6 +61,8 @@ Tero Karvisen [ohjein](https://terokarvinen.com/hello-ansible/)
 
     maija@hallitsija3:~$ sudo apt-get install ansible micro bash-completion tree
 
+    Tähän jää 3.11.2026 klo 01:15  
+
 
 
 
