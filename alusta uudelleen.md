@@ -56,7 +56,12 @@ seuraavaksi SSH-käyttöönotto Tero Karvisen ohjeiden mukaan [täältä](https:
 
 
 
-## SSH avaimella automaattisesti sisään Tero Karvisen [ohjein](https://terokarvinen.com/ssh-public-key-login-without-password/#automatic-login-with-ssh-public-key)
+## Ansiblea 
+Tero Karvisen [ohjein](https://terokarvinen.com/hello-ansible/)  
+
+    maija@hallitsija3:~$ sudo apt-get install ansible micro bash-completion tree
+
+
 
 
 
