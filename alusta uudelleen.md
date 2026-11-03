@@ -61,7 +61,42 @@ Tero Karvisen [ohjein](https://terokarvinen.com/hello-ansible/)
 
     maija@hallitsija3:~$ sudo apt-get install ansible micro bash-completion tree
 
-    Tähän jää 3.11.2026 klo 01:15  
+    Tähän jää 3.11.2026 klo 01:15  jatkuu 3.11.2026 klo 19:24
+
+    maija@hallitsija3:~$ sudo apt-get update && upgrade  
+    maija@hallitsija3:~$ cd
+    maija@hallitsija3:~$ mkdir ansible/  //tehdään ansiblelle oma kansio 
+    maija@hallitsija3:~$ cd ansible/     //siirytään kansion sisälle
+    maija@hallitsija3:~/ansible$ 
+    maija@hallitsija3:~/ansible$ micro hosts.ini //hosts.ini tiedostoon kirjataan hallittavat isäntäkoneet, jokainen omalle rivilleen
+    maija@hallitsija3:~/ansible$ cat hosts.ini   //Tässä vaiheessa ainoastaan "localhost", myöhemmin lisätään lisää ja isäntäkoneita voidaan myös ryhmittää. 
+localhost
+    
+    maija@hallitsija3:~/ansible$ ansible all -a 'uptime' -i hosts.ini
+"[WARNING]: Host 'localhost' is using the discovered Python interpreter at '/usr/bin/python3.13', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.19/reference_appendices/interpreter_discovery.html for more information.
+localhost | CHANGED | rc=0 >>
+ 19:32:54 up 19 min,  2 users,  load average: 0,19, 0,21, 0,09"   // Python-ohjelmiston muuttuja väärä, korjataan lisäämällä hosts.ini -tiedostoon tulkkikomento?
+ 
+    maija@hallitsija3:~/ansible$ micro hosts.ini  
+    maija@hallitsija3:~/ansible$ cat hosts.ini 
+    
+"localhost  
+
+[all:vars]  
+~~ansible_python_interpreter=/usr/bin/python~~
+ansible_python_interpreter=/usr/bin/python3"  
+
+
+    maija@hallitsija3:~/ansible$ ansible all -a 'uptime' -i hosts.ini  // Pythonissa kirjoitusvirhe>> korjataan  
+
+<img width="840" height="227" alt="Näyttökuva 2026-11-03 195237 kirjoitusvirhe " src="https://github.com/user-attachments/assets/28b56b3d-e59f-42cf-bb42-0c98c94715ef" />
+    
+
+    
+
+
+    
+
 
 
 
