@@ -83,13 +83,24 @@ localhost | CHANGED | rc=0 >>
 "localhost  
 
 [all:vars]  
-~~ansible_python_interpreter=/usr/bin/python~~
+~~ansible_python_interpreter=/usr/bin/python~~  
 ansible_python_interpreter=/usr/bin/python3"  
 
 
     maija@hallitsija3:~/ansible$ ansible all -a 'uptime' -i hosts.ini  // Pythonissa kirjoitusvirhe>> korjataan  
 
-<img width="840" height="227" alt="Näyttökuva 2026-11-03 195237 kirjoitusvirhe " src="https://github.com/user-attachments/assets/28b56b3d-e59f-42cf-bb42-0c98c94715ef" />
+<img width="840" height="227" alt="Näyttökuva 2026-11-03 195237 kirjoitusvirhe " src="https://github.com/user-attachments/assets/28b56b3d-e59f-42cf-bb42-0c98c94715ef" />  
+
+    maija@hallitsija3:~/ansible$ micro ansible.cfg  
+"[defaults]
+inventory = hosts.ini"     //tehdään Ansibleen konfiguraatiot (asetukset) tekstitiedostona, ei erikseen tarvitse komentaa jokaista isäntäkonetta tottelemaan pelikirjaa.    
+
+<img width="343" height="94" alt="Näyttökuva 2026-11-03 200149" src="https://github.com/user-attachments/assets/45ab94b4-bb0f-47c1-bf0b-265ad61a44b2" />  
+
+
+
+
+
     
 
     
