@@ -189,7 +189,7 @@ Tehdään site.yml -tiedosto, joka listaa mikä koneryhmä saa mitkäkin roolit 
 
 
 
-
+*********************************************************************
 
 
 https://terokarvinen.com/2008/05/02/install-apache-web-server-on-ubuntu-4/index.html  
