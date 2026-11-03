@@ -65,9 +65,15 @@ Tero Karvisen [ohjein](https://terokarvinen.com/hello-ansible/)
 
     maija@hallitsija3:~$ sudo apt-get update && upgrade  
     maija@hallitsija3:~$ cd
+
+#### Ansible-kansio  
+
     maija@hallitsija3:~$ mkdir ansible/  //tehdään ansiblelle oma kansio 
     maija@hallitsija3:~$ cd ansible/     //siirytään kansion sisälle
     maija@hallitsija3:~/ansible$ 
+
+#### hosts.ini -tiedosto  
+
     maija@hallitsija3:~/ansible$ micro hosts.ini //hosts.ini tiedostoon kirjataan hallittavat isäntäkoneet, jokainen omalle rivilleen
     maija@hallitsija3:~/ansible$ cat hosts.ini   //Tässä vaiheessa ainoastaan "localhost", myöhemmin lisätään lisää ja isäntäkoneita voidaan myös ryhmittää. 
 localhost
@@ -91,11 +97,65 @@ ansible_python_interpreter=/usr/bin/python3"
 
 <img width="840" height="227" alt="Näyttökuva 2026-11-03 195237 kirjoitusvirhe " src="https://github.com/user-attachments/assets/28b56b3d-e59f-42cf-bb42-0c98c94715ef" />  
 
+#### ansible.cfg -tiedosto  
+
     maija@hallitsija3:~/ansible$ micro ansible.cfg  
-"[defaults]
+"[defaults]  
 inventory = hosts.ini"     //tehdään Ansibleen konfiguraatiot (asetukset) tekstitiedostona, ei erikseen tarvitse komentaa jokaista isäntäkonetta tottelemaan pelikirjaa.    
 
 <img width="343" height="94" alt="Näyttökuva 2026-11-03 200149" src="https://github.com/user-attachments/assets/45ab94b4-bb0f-47c1-bf0b-265ad61a44b2" />  
+
+#### site.yml  
+
+Tehdään site.yml -tiedosto, joka listaa mikä koneryhmä saa mitkäkin roolit (asetukset)  
+
+    maija@hallitsija3:~/ansible$ micro site.yml  
+    maija@hallitsija3:~/ansible$ cat site.yml 
+
+<img width="237" height="47" alt="Näyttökuva 2026-11-03 201846" src="https://github.com/user-attachments/assets/11433729-92f7-4c60-9df3-452d4d97c0dc" />  
+
+    maija@hallitsija3:~/ansible$ ansible-playbook site.yml  
+    ei löydy vielä...
+    maija@hallitsija3:~/ansible$ mkdir -p roles/hello/tasks/  
+    maija@hallitsija3:~/ansible$ micro roles/hello/tasks/main.yml   
+
+    
+"- copy:
+    dest: /tmp/hello-ansible
+    content: "Heippa, tämä on kokeilu!\n" 
+    
+
+<img width="599" height="243" alt="Ansible toimii" src="https://github.com/user-attachments/assets/2b3aa234-30b6-4fd6-bc5d-8e3c90655a4b" />  
+
+    maija@hallitsija3:~/ansible$ ssh localhost 'cat /tmp/hello-ansible'  
+
+<img width="338" height="22" alt="tervehdys toimii" src="https://github.com/user-attachments/assets/8673e776-445c-4af7-bfda-b14778803de1" />
+
+    maija@hallitsija3:~/ansible$ micro ansible.cfg  
+    [defaults]  
+    inventory = hosts.ini  
+    display_args_to_stdout = true  //ansible kirjoittaa muistiinpanoja tekemistään tehtävistä.   
+
+<img width="505" height="319" alt="tree-F" src="https://github.com/user-attachments/assets/bfdce590-69ba-4f1e-955a-e77702e44db8" />  
+
+
+
+    
+    
+
+    
+
+
+
+  
+
+
+  
+
+
+
+
+
 
 
 
