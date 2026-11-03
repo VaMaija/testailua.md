@@ -140,17 +140,6 @@ Tehdään site.yml -tiedosto, joka listaa mikä koneryhmä saa mitkäkin roolit 
 
 
 
-    
-    
-
-    
-
-
-
-  
-
-
-  
 
 
 
@@ -159,31 +148,6 @@ Tehdään site.yml -tiedosto, joka listaa mikä koneryhmä saa mitkäkin roolit 
 
 
 
-
-
-    
-
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-
-    
 
 
 
@@ -192,15 +156,18 @@ Tehdään site.yml -tiedosto, joka listaa mikä koneryhmä saa mitkäkin roolit 
 *********************************************************************
 
 
-https://terokarvinen.com/2008/05/02/install-apache-web-server-on-ubuntu-4/index.html  
-
-
-
-maija@hallitsija:~$ ip addr  
-maija    
 
 
 
 
-Lähteet: 
-https://terokarvinen.com/2008/05/02/install-apache-web-server-on-ubuntu-4/index.html  
+Lähteet:
+Trixie kuvake https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/  
+SSh käyttöönotto https://terokarvinen.com/ssh-public-key-login-without-password/  
+Aatu Niemi h4 https://github.com/AONCODES/linux-course/blob/main/h4.md   
+Upcloud https://upcloud.com/  
+Hello ansible, Karvinen https://terokarvinen.com/hello-ansible/  
+
+
+
+
+ 
