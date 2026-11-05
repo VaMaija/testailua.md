@@ -1,0 +1,30 @@
+marras 05 19:24:56 hallitsija3 sudo[11177]:    maija : TTY=pts/0 ; PWD=/home/maija ; USER=root ; COMMAND=/usr/bin/journalctl --grep caddy -n 30
+marras 05 18:56:08 hallitsija3 systemd[1]: Failed to start caddy.service - Caddy.
+marras 05 18:56:08 hallitsija3 systemd[1]: caddy.service: Failed with result 'exit-code'.
+marras 05 18:56:08 hallitsija3 systemd[1]: caddy.service: Main process exited, code=exited, status=1/FAILURE
+marras 05 18:56:08 hallitsija3 caddy[11007]: Error: adapting config using caddyfile: /etc/caddy/Caddyfile:5 - Syntax error: Unexpected token 'file_server', expecting '}'
+marras 05 18:56:08 hallitsija3 caddy[11007]: {"level":"info","ts":1793897768.1443675,"msg":"using provided configuration","config_file":"/etc/caddy/Caddyfile","config_adapter":""}
+marras 05 18:56:08 hallitsija3 caddy[11007]: MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/system.slice/caddy.service/memory.pressure
+marras 05 18:56:08 hallitsija3 caddy[11007]: HOME=/var/lib/caddy
+marras 05 18:56:08 hallitsija3 caddy[11007]: LOGNAME=caddy
+marras 05 18:56:08 hallitsija3 caddy[11007]: USER=caddy
+marras 05 18:56:08 hallitsija3 caddy[11007]: caddy.Version=2.6.2
+marras 05 18:56:08 hallitsija3 caddy[11007]: caddy.ConfigAutosavePath=/var/lib/caddy/.config/caddy/autosave.json
+marras 05 18:56:08 hallitsija3 caddy[11007]: caddy.AppConfigDir=/var/lib/caddy/.config/caddy
+marras 05 18:56:08 hallitsija3 caddy[11007]: caddy.AppDataDir=/var/lib/caddy/.local/share/caddy
+marras 05 18:56:08 hallitsija3 caddy[11007]: caddy.HomeDir=/var/lib/caddy
+marras 05 18:56:08 hallitsija3 systemd[1]: Starting caddy.service - Caddy...
+marras 05 18:56:08 hallitsija3 sudo[11002]:    maija : TTY=pts/0 ; PWD=/home/maija ; USER=root ; COMMAND=/usr/bin/systemctl start caddy
+marras 05 18:55:15 hallitsija3 systemd[1]: caddy.service: Unit cannot be reloaded because it is inactive.
+marras 05 18:55:14 hallitsija3 sudo[10996]:    maija : TTY=pts/0 ; PWD=/home/maija ; USER=root ; COMMAND=/usr/bin/systemctl reload caddy
+marras 05 18:54:37 hallitsija3 sudo[10991]:    maija : TTY=pts/0 ; PWD=/etc/caddy ; USER=root ; COMMAND=/usr/bin/dd bs=4k of=Caddyfile
+marras 05 18:53:59 hallitsija3 sudo[10986]:    maija : TTY=pts/0 ; PWD=/etc/caddy ; USER=root ; COMMAND=/usr/bin/dd bs=4k of=Caddyfile
+marras 05 18:51:52 hallitsija3 sudo[10899]:    maija : TTY=pts/0 ; PWD=/home/maija ; USER=root ; COMMAND=/usr/bin/chown -R caddy:caddy /var/www/omatsivut
+marras 05 18:51:32 hallitsija3 sudo[10895]:    maija : TTY=pts/0 ; PWD=/var/www/verkkosivu ; USER=root ; COMMAND=/usr/bin/chown -R caddy:caddy /var/www/omatsivut
+marras 05 18:46:06 hallitsija3 sudo[10785]:    maija : TTY=pts/0 ; PWD=/home/maija ; USER=root ; COMMAND=/usr/bin/apt-get install caddy
+marras 05 18:27:25 hallitsija3 systemd[1]: Failed to start caddy.service - Caddy.
+marras 05 18:27:25 hallitsija3 systemd[1]: caddy.service: Failed with result 'exit-code'.
+marras 05 18:27:25 hallitsija3 systemd[1]: caddy.service: Main process exited, code=exited, status=1/FAILURE
+marras 05 18:27:25 hallitsija3 caddy[9698]: {"level":"info","ts":1793896045.3590407,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/var/lib/caddy/.local/share/>
+marras 05 18:27:25 hallitsija3 caddy[9698]: {"level":"info","ts":1793896045.3526628,"msg":"using provided configuration","config_file":"/etc/caddy/Caddyfile","config_adapter":""}
+marras 05 18:27:25 hallitsija3 caddy[9698]: MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/system.slice/caddy.service/memory.pressure
